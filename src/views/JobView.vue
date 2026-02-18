@@ -19,9 +19,12 @@ const state = reactive({
 
 const deleteJob = async () => {
   try {
-    await axios.delete(`/api/jobs/${jobId}`);
-    toast.success("Job deleted successfully!");
-    router.push("/jobs");
+    const confirmDelete = window.confirm("Are you sure you want to delete this job?");
+    if (confirmDelete) {
+      await axios.delete(`/api/jobs/${jobId}`);
+      toast.success("Job deleted successfully!");
+      router.push("/jobs");
+    }
   } catch (error) {
     console.error("Error deleting job:", error);
     toast.error("Error deleting job. Please try again.");
@@ -54,9 +57,7 @@ onMounted(async () => {
             <div
               class="text-gray-500 mb-4 flex align-middle justify-center md:justify-start"
             >
-              <i
-                class="pi pi-map-marker text-lg text-orange-700 mr-2"
-              ></i>
+              <i class="pi pi-map-marker text-lg text-orange-700 mr-2"></i>
               <p class="text-orange-700">{{ state.job.location }}</p>
             </div>
           </div>
@@ -112,7 +113,8 @@ onMounted(async () => {
               class="bg-green-500 hover:bg-green-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
               >Edit Job</RouterLink
             >
-            <button @click="deleteJob"
+            <button
+              @click="deleteJob"
               class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
             >
               Delete Job

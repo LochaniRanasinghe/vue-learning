@@ -43,18 +43,18 @@
       }
     },
     {
-      "id": "4",
-      "title": "Vue Front-End Developer",
       "type": "Part-Time",
+      "title": "Vue Front-End Developer",
       "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
+      "salary": "$175K - $200K",
       "location": "Pheonix, AZ",
-      "salary": "$60K - $70K",
       "company": {
         "name": "Alpha Elite",
         "description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
         "contactEmail": "contact@adipisicingelit.com",
         "contactPhone": "555-555-5555"
-      }
+      },
+      "id": "4"
     },
     {
       "id": "5",
@@ -123,34 +123,6 @@
         "name": "ffffffffffffffffffffffffffffffffffffffffffff",
         "description": "fffffffffffffffffffffff",
         "contactEmail": "lochaniranasinghe12@gmail.com",
-        "contactPhone": "0716848828"
-      }
-    },
-    {
-      "id": "5df5",
-      "type": "Full-Time",
-      "name": "Lochani Ranasinghe 02",
-      "description": "ffffffffffffffffff",
-      "salary": "$125K - $150K",
-      "location": "fffffffffffffff",
-      "company": {
-        "name": "Sri Lanka Institute of Information Technology",
-        "description": "fffffffffffffffffffff",
-        "contactEmail": "lochaniranasinghe12@gmail.com",
-        "contactPhone": "0716848828"
-      }
-    },
-    {
-      "id": "0eec",
-      "type": "Part-Time",
-      "name": "Sydney Camilla Carver Levine",
-      "description": "ssssssssssss",
-      "salary": "$150K - $175K",
-      "location": "sssssssssssssss",
-      "company": {
-        "name": "ssssssssssss",
-        "description": "sssssssssssssssss",
-        "contactEmail": "ssssssssssssssssss@mail.com",
         "contactPhone": "0716848828"
       }
     }
